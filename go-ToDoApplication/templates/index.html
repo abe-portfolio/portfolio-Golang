@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go ToDo</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+    <header>
+        {{ template "header.html" . }}
+    </header>
+
+    <!-- 動作確認用 -->
+    <div class="sample">
+        <!-- main.goのgin.H{ "name": "Gin-User" }の内容を受け取る -->
+        <h1>Welcome,{{ .name }}</h1>
+        <p>Hello Gin</p>
+        <script src="/static/js/script.js"></script>
+    </div>
+
+    <footer>
+        {{ template "footer.html" . }}
+    </footer>
+</body>
+</html>

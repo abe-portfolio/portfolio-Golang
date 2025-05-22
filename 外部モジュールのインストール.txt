@@ -1,0 +1,31 @@
+・gin
+go get -u github.com/gin-gonic/gin
+
+
+・Echo
+go get -u github.com/labstack/echo/v4
+
+
+・GORM（メイン）
+go get -u gorm.io/gorm
+
+ --GORM（ドライバー：SQLite）
+   go get -u gorm.io/driver/sqlite
+
+ --GORM（ドライバー：MySQL:）
+   go get -u gorm.io/driver/mysql
+
+ --GORM（ドライバー：PostgreSQL）
+   go get -u gorm.io/driver/postgres
+
+ --GORM（ドライバー：SQL Server）
+   go get -u gorm.io/driver/sqlserver
+
+ --GORM（ドライバー：ClickHouse）
+   go get -u gorm.io/driver/clickhouse
+
+
+
+※
+go.modとgo.sumをgithubなどにpush -> pullすれば、
+別端末でも初回ビルド時にモジュールがダウンロードされるため端末ごとのgo getは不要。
